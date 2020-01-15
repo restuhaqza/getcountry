@@ -21,6 +21,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                     " %s TEXT NOT NULL," +
                     " %s TEXT NOT NULL," +
                     " %s TEXT NOT NULL," +
+                    " %s TEXT NOT NULL," +
                     " %s TEXT NOT NULL)",
             DatabaseContract.TABLE_COUNTRY,
             DatabaseContract.Country_Columns._ID,
@@ -36,7 +37,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             DatabaseContract.Country_Columns.numericCode,
             DatabaseContract.Country_Columns.nativeLang,
             DatabaseContract.Country_Columns.currencyCode,
-            DatabaseContract.Country_Columns.currencyName
+            DatabaseContract.Country_Columns.currencyName,
+            DatabaseContract.Country_Columns.flag
     );
 
     public DatabaseHelper(Context context) {

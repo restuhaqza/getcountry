@@ -18,5 +18,6 @@ public class DatabaseContract {
         public static String nativeLang = "nativeLang";
         public static String currencyCode = "currencyCode";
         public static String currencyName = "currencyName";
+        public static String flag = "flag";
     }
 }

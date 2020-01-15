@@ -74,7 +74,7 @@ public class FavHelper {
         return database.insert(DATABASE_TABLE, null, values);
     }
 
-    public int delete(int id){
+    public int delete(String id){
         return database.delete(TABLE_COUNTRY, alpha3code + " = '"+id+"'", null);
     }
 
