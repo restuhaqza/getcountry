@@ -37,6 +37,7 @@ public class DetailActivity extends AppCompatActivity {
     private TextView lang;
     private TextView currencyCode;
     private TextView currencyName;
+    private TextView alpha3code;
 
     Button btn_favorite;
     Button btn_back;
@@ -66,6 +67,8 @@ public class DetailActivity extends AppCompatActivity {
         currencyCode = findViewById(R.id.currency_code);
         currencyName = findViewById(R.id.currency_name);
         btn_favorite =findViewById(R.id.btn_favorite);
+        alpha3code = findViewById(R.id.code_country);
+
         btn_back = findViewById(R.id.btn_back);
 
         country_name.setText(countryModel.getName());
@@ -75,6 +78,7 @@ public class DetailActivity extends AppCompatActivity {
         lang.setText(countryModel.getNativeLang());
         currencyCode.setText(countryModel.getCurrencyCode());
         currencyName.setText(countryModel.getCurrencyName());
+        alpha3code.setText(countryModel.getAlpha3code());
 
         Glide.with(this)
                 .load(countryModel.getFlagPng())

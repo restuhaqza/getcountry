@@ -49,6 +49,28 @@
                 android:layout_weight="1"
                 android:text="TextView" />
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/head_code_country"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:text="Aplha Code" />
+
+            <TextView
+                android:id="@+id/code_country"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="TextView" />
+        </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -165,7 +187,7 @@
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:layout_weight="1"
-                android:text="Language" />
+                android:text="Curr" />
 
             <TextView
                 android:id="@+id/currency_name"
@@ -206,7 +228,7 @@
             android:background="@drawable/shape"
             android:drawableLeft="@drawable/ic_favorite_off"
             android:drawableTint="#fff"
-            android:paddingLeft="10dp"
+            android:paddingLeft="5dp"
             android:text="Favorite"
             app:cornerRadius="25px"
             app:itemIconTint="@drawable/state_bnve"
