@@ -40,7 +40,7 @@
             android:layout_height="wrap_content"
             android:textAlignment="center"
             android:layout_centerInParent="true"
-            android:text="Bayu Afrizal (17.62.0104)"
+            android:text="Bayu Afrizal (17.62.0100)"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
         <TextView
             android:layout_width="match_parent"
