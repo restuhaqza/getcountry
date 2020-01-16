@@ -39,6 +39,7 @@ public class DetailActivity extends AppCompatActivity {
     private TextView currencyName;
 
     Button btn_favorite;
+    Button btn_back;
 
 
     private Boolean isFavorite = false;
@@ -65,6 +66,7 @@ public class DetailActivity extends AppCompatActivity {
         currencyCode = findViewById(R.id.currency_code);
         currencyName = findViewById(R.id.currency_name);
         btn_favorite =findViewById(R.id.btn_favorite);
+        btn_back = findViewById(R.id.btn_back);
 
         country_name.setText(countryModel.getName());
         region.setText(countryModel.getRegion());
@@ -93,6 +95,13 @@ public class DetailActivity extends AppCompatActivity {
 
                 isFavorite = !isFavorite;
                 favBtnSet();
+            }
+        });
+
+        btn_back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                DetailActivity.super.onBackPressed();
             }
         });
     }

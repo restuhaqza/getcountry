@@ -177,15 +177,42 @@
 
     </LinearLayout>
 
-    <Button
-        android:id="@+id/btn_favorite"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:drawableLeft="@drawable/ic_favorite_off"
-        android:text="Favorite"
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
         android:layout_gravity="center"
-        app:cornerRadius="25px"
-        app:strokeColor="#0000" />
+        android:gravity="center_horizontal"
+        android:paddingTop="50dp"
+        >
+
+        <Button
+            android:id="@+id/btn_back"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="109dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape"
+            android:drawableLeft="@drawable/ic_arrow_back"
+            android:paddingLeft="10dp"
+            android:text="Back"
+            app:cornerRadius="25px"
+            app:strokeColor="#0000" />
+
+        <Button
+            android:id="@+id/btn_favorite"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="109dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape"
+            android:drawableLeft="@drawable/ic_favorite_off"
+            android:drawableTint="#fff"
+            android:paddingLeft="10dp"
+            android:text="Favorite"
+            app:cornerRadius="25px"
+            app:itemIconTint="@drawable/state_bnve"
+            app:itemTextColor="@drawable/state_bnve"
+            app:strokeColor="#0000" />
+    </LinearLayout>
+
 
 </LinearLayout>
